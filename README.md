@@ -1,15 +1,11 @@
 
 ### Project Name :
-Unrealistic Photography
+bike collection
 
-
-### Project Features :
-Responsive MERN Stack app with firebase and admin authentication,dashboard functionality for Admin and User
-Customer can book service,check status, and able to give their feedback
-Admin can modifier their service and add new admin and also change order list
-
-
-### Website live link : [https://service-mern.web.app/]
-
-## I have used React router, react components, react hooks, react-bootstrap in this project  [https://reactjs.org/]
-# niche-website-client-side-MdObaidurRahman
+##bullet point##
+1.it is bike collection website.
+2.customer can order from here.
+3.customer can chhose their bike with description.
+4.it is easy to use.
+5.anuyone can order bike from here
+### Website live link : [https://bike-collection-web.netlify.app/]
