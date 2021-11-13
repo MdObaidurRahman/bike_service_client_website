@@ -1,0 +1,13 @@
+
+.dash-title{
+    color: rgb(56, 177, 72) ;
+    margin-bottom: 1rem;
+
+}
+
+.dash-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    color: rgb(98, 101, 107);
+}
