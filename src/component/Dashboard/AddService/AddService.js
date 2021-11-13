@@ -27,7 +27,7 @@ const AddService = () => {
         formData.append('price', info.price);
         console.log(formData);
 
-        fetch('http://localhost:9000/addService', {
+        fetch('https://evening-savannah-23942.herokuapp.com/addService', {
             method: 'POST',
             // headers: { 'content-type': 'application/json' },
             body: formData

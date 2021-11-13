@@ -15,7 +15,7 @@ const ServiceDetails = () => {
     const { id } = useParams()
     // console.log("id is ", id);
     React.useEffect(() => {
-        fetch(`http://localhost:9000/service/${id}`)
+        fetch(`https://evening-savannah-23942.herokuapp.com/service/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data);
@@ -50,7 +50,7 @@ const ServiceDetails = () => {
             orderTime: new Date()
         }
         console.log(serviceData);
-        fetch('http://localhost:9000/addBooking', {
+        fetch('https://evening-savannah-23942.herokuapp.com/addBooking', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(serviceData)
@@ -69,35 +69,6 @@ const ServiceDetails = () => {
 
     };
 
-    // const handlePaymentSuccess = (paymentId, e) => {
-    //     const newInformation = {
-    //         ...loggedInUser,
-    //         title: service.title,
-    //         price: service.price,
-    //         description: service.description,
-    //         paymentId,
-    //         payWith: "Credit Card",
-    //         status: "Pending",
-    //         orderTime: new Date()
-    //     }
-    //     console.log("newInfo ", newInformation);
-    //     fetch('http://localhost:9000/addBooking', {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify(newInformation)
-    //     })
-    //         .then(res => res.json())
-    //         .then((data) => {
-    //             if (data) {
-    //                 console.log("database data ", data);
-    //                 alert('your order placed successfully')
-    //                 history.push('/home')
-    //             }
-
-    //         })
-    //     history.push('/home')
-    //     e.preventDefault();
-    // }
     return (
         <section className="container-fluid row">
             <Sidebar />

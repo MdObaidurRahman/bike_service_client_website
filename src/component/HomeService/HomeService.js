@@ -12,7 +12,7 @@ const HomeService = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:9000/service")
+        fetch("https://evening-savannah-23942.herokuapp.com/service")
             .then(res => res.json())
             .then(data => setServiceData(data.slice(0, 6)))
     }, [])

@@ -5,37 +5,7 @@ import Edit from '../../../images/edit 1.png'
 const OrderListDetails = ({ list }) => {
     console.log(list);
     let { id } = list._id
-    // const [render, setRender] = React.useState(1);
-    // const [update, setUpdate] = React.useState();
-
-
-    // const handle = (e) => {
-    //     console.log(e.target.value);
-    //     // setUpdate(e.target.value)
-    //     let update = e.target.value
-    //     fetch(`http://localhost:5000/update/${id}`, {
-    //         method: 'PATCH',
-    //         headers: {
-    //             "content-type": 'application/json'
-    //         },
-    //         body: JSON.stringify({ update })
-    //     })
-    //         .then(res => res.json())
-    //         .then((data) => {
-
-    //             if (data) {
-    //                 alert("your data has been loaded")
-    //             }
-
-    //         })
-    //         .catch((error) => {
-    //             console.log((error));
-    //         })
-
-    // }
-    // console.log(update);
-
-
+   
     return (
 
 
